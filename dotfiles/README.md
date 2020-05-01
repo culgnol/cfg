@@ -13,3 +13,13 @@ $ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 $ git clone --bare <git-repo-url> $HOME/.cfg
 $ config checkout
 ```
+
+Example alias usage flow
+```
+config status
+config add .vimrc
+config commit -m "Add vimrc"
+config add .bashrc
+config commit -m "Add bashrc"
+config push
+```
