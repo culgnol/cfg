@@ -23,3 +23,7 @@ config add .bashrc
 config commit -m "Add bashrc"
 config push
 ```
+
+# Inspriations / Pirated from:
+
+https://github.com/paulirish/dotfiles
