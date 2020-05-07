@@ -13,31 +13,31 @@ antigen use oh-my-zsh
 
 # Load the theme
 antigen theme https://github.com/denysdovhan/spaceship-zsh-theme spaceship
-# antigen bundle denysdovhan/spaceship-prompt
 
-local b="antigen-bundle"
+antigen bundles <<EOBUNDLES
+	# https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
+	command-not-found
 
-# https://github.com/ohmyzsh/ohmyzsh/wiki/Plugins
-$b command-not-found
+	git
+	git-extras
+	git-flow
 
-$b git
-$b git-extras
-$b git-flow
+        zsh-users/zsh-completions
+	zsh-users/zsh-autosuggestions
+	zsh-users/zsh-syntax-highlighting
 
-$b zsh-users/zsh-autosuggestions
-$b zsh-users/zsh-syntax-highlighting
+	z
+	web-search
+	extract
 
-$b z
-$b web-search
-$b extract
-
-# dev
-# $b docker
-# $b docker-compose
-# $b dotnet
-# $b kubectl
-# $b npm
-# $b jira
+	# dev
+	#docker
+	#docker-compose
+	#dotnet
+	#kubectl
+	#npm
+	#jira
+EOBUNDLES
 
 # Tell Antigen that you're done.
 antigen apply
